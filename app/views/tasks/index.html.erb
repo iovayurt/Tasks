@@ -1,11 +1,13 @@
-<h1>Tasks</h1>
+<div class="container">
+  <h1>Tasks</h1>
 
-<ul>
+  <ul>
     <% @tasks.each do |task| %>
-        <li><%= link_to task.title, task_path(task) %> </li>
+      <li><%= link_to task.title, task_path(task) %> </li>
     <% end %>
-</ul>
+  </ul>
 
-<%= link_to "NEW TASK", new_task_path %>
+  <%= link_to "NEW TASK", new_task_path %>
 
-<i class="fab fa-github"></i>
+  <i class="fab fa-github"></i>
+</div>
